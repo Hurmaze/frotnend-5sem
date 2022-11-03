@@ -1,0 +1,26 @@
+.error {
+    border: 1px solid red;
+}
+
+.form {
+    width: 15em;
+    height: 16em;
+}
+
+form > input {
+    margin: 0.3em;
+    height: 2.2em;
+    width: 13em;
+    border-radius: 0.3em;
+    border-width: 3px;
+}
+
+table, td {
+    border: 1px solid #666464;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+
+

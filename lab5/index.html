@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Гусак М.О. ІС-01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- TASK 1 -->
+<form id="form" class="form">
+        <input type="text" name="name" id="name" placeholder="ПІБ">
+
+        <input type="text" name="idCard" id="idCard" placeholder="ID-Card">
+
+        <input type="text" name="birthday" id="birthday" placeholder="Дата народження">
+
+        <input type="text" name="address" id="address" placeholder="Адреса">
+
+        <input type="text" name="email" id="email" placeholder="Email">
+
+    <button type="button" onclick="onSubmit()">Надіслати</button>
+</form>
+<div id="inform">
+    <h3>Введені дані:</h3>
+    <p><b>ПІБ:</b> <span id="inputed_name"></span></p>
+    <p><b>ID-card:</b> <span id="inputed_id_card"></span></p>
+    <p><b>Дата народження:</b> <span id="inputed_birthday"></span></p>
+    <p><b>Адреса:</b> <span id="inputed_address"></span></p>
+    <p><b>E-mail:</b> <span id="inputed_email"></span></p>
+</div>
+
+<!-- TASK 2 -->
+<table>
+    <input type="color" id="color">
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
