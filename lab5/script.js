@@ -1,5 +1,5 @@
+//Task 1
 var form = document.querySelector('form');
-const body = document.querySelector('body');
 
 function onSubmit() {
     var isError = false;
@@ -83,11 +83,12 @@ function validateEmail() {
 // Task 2
 
 const variant = 2;
+const body = document.querySelector('body');
 
 for (let r = 0; r < 6; r++) {
     const rowElement = document.createElement('tr');
-    for (let d = 0; d < 6; d++) {
-        const index = String(d + 1 + (r * 6));
+    for (let c = 0; c < 6; c++) {
+        const index = String(c + 1 + (r * 6));
         const dataElement = document.createElement('td');
         dataElement.innerHTML = index;
         dataElement.id = index;
@@ -96,22 +97,18 @@ for (let r = 0; r < 6; r++) {
     }
 }
 
-const element = document.getElementById(String(variant));
+const cell = document.getElementById(variant);
 
-element.onmouseover = () => {
-    element.style.background = 'rgb(' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255)
+cell.onmouseover = () => {
+    cell.style.background = 'rgb(' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255)
         + ',' + Math.floor(Math.random() * 255) + ')';
 };
 
-function Click(e) {
+cell.onmouseup = () => {
     e.style.background = document.getElementById('color').value;
 }
 
-element.onmouseup = () => {
-    Click(element);
-};
-
-element.ondblclick = () => {
+cell.ondblclick = () => {
     var column = variant % 6;
     for (let i = 0; i < 6; i++) {
         const currentElement = document.getElementById(String(column + i * 6));
