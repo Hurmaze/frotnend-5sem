@@ -1,0 +1,38 @@
+body {
+    background-color: lightpink;
+}
+
+.table {
+    height: 530px;
+}
+
+.download {
+    padding: 10px 0;
+    text-align: center;
+    height: 60px;
+}
+
+.button {
+    padding: 8px 12px;
+    color: deeppink;
+    font-size: 16px;
+}
+
+.fail_message {
+    color: rgb(47, 47, 47);
+    font-size: 24px;
+    font-weight: 530;
+}
+
+.result {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.about {
+    color: dimgray;
+    padding: 5px 0;
+    font-size: 20px;
+    text-align: center;
+}
