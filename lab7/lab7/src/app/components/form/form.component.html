@@ -1,0 +1,22 @@
+<form #accountform="ngForm" name="accountForm" id="form" class="form">
+    <input type="text" name="name"  ng-pattern="/^[А-ЯІЇ][а-яії]+\s[А-ЯІЇ]\.[А-ЯІЇ]\.$/" placeholder="ПІБ">
+
+    <input type="text" name="idCard" [(ngModel)]="account.cardId" ng-pattern="/^[A-ZА-ЯІЇЄ]{2} №\d{6}$/" placeholder="ID-Card">
+
+    <input type="text" name="birthday" [(ngModel)]="account.birthday" ng-pattern="/^\d{2}.\d{2}.\d{4}$/" placeholder="Дата народження">
+
+    <input type="text" name="address" [(ngModel)]="account.address" ng-pattern="/^м.\d{6}$/" placeholder="Адреса">
+
+    <input type="text" name="email" [(ngModel)]="account.email" ng-pattern="/^\w+@\w+\.com$/" placeholder="Email">
+
+<button type="button" onclick="ngform.Validate()">Надіслати</button>
+</form>
+<div>
+    <h3>Введені дані:</h3>
+    <p><b>ПІБ:</b> <span id="inputed_name">{{account.name}}</span></p>
+    <p><b>ID-card:</b> <span id="inputed_id_card">{{account.cardId}}</span></p>
+    <p><b>Дата народження:</b> <span id="inputed_birthday">{{account.birthday}}</span></p>
+    <p><b>Адреса:</b> <span id="inputed_address">{{account.address}}</span></p>
+    <p><b>E-mail:</b> <span id="inputed_email">{{account.email}}</span></p>
+</div>
+
